@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="connect4.css" rel="stylesheet">
+
+  <title>Connect 4</title>
+
+<body>
+
+  <div id="header">
+    <h1>Connect Four</h1>
+    <form id="colors">
+      <input type="text" id="p1color" placeholder="Player 1 color">
+      <input type="text" id="p2color" placeholder="Player 2 color">
+      <button type="submit" id="reset">Start Game</button>
+    </form>
+  </div>
+
+  <div id="game">
+    <table id="board"></table>
+  </div>
+
+  <div id="footer">
+    <div id="msg">
+      <p>To start the game:</p>
+      <p>Choose a color for Player 1 and a color for Player 2</p>
+      <p>To begin, player 1 click on a square in the top row to drop a piece.</p>
+      <p>Play then alternates between player 1 and player 2.</p>
+    </div>
+    <!-- <button id="reset">Play again</button> -->
+  </div>
+
+  <script src="helper.js"></script>
+  <script src="connect4.js"></script>
+
+</body>
+
+</html>

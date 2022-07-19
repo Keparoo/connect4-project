@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* game board table */
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: lightcyan;
+}
+
+#header {
+  text-align: center;
+  font-weight: bold;
+}
+
+#footer {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+#board {
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+  position: relative;
+}
+
+@keyframes slidedown {
+  from {
+    top: -342px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+/* pieces are divs within game table cells displayed as colored circles */
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  animation: slidedown 0.35s ease-in;
+}
+
+/* column-top is table row of clickable areas for each column */
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+.win-color {
+  background-color: white;
+}
+
+.start-color {
+  background-color: lightcyan;
+}
+
+.play {
+  background-color: lightcyan;
+}
+
+.gameOver {
+  background-color: white;
+}
